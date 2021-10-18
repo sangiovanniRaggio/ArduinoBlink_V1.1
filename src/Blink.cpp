@@ -6,6 +6,8 @@
 
 #include <Arduino.h>
 
+#define TIEMPO_PARPADEO 500
+
 void setup()
 {
   pinMode(LED_BUILTIN, OUTPUT);
@@ -18,8 +20,8 @@ void loop()
 {
   Serial.println("Prendiendo Led");
   digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
+  delay(TIEMPO_PARPADEO);
   Serial.println("Apagando Led");
   digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
+  delay(TIEMPO_PARPADEO);
 }
