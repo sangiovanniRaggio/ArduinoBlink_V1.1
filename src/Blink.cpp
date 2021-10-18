@@ -6,7 +6,7 @@
 
 #include <Arduino.h>
 
-#define TIEMPO_PARPADEO 500
+#define TIEMPO_PARPADEO 1000
 
 void setup()
 {
